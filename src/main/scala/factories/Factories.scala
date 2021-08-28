@@ -5,7 +5,7 @@ import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
 import java.io.File
 import scala.util.Random
-import models.Person
+import models._
 
 
 abstract class DataFactory {}
@@ -22,7 +22,7 @@ class PersonFactory (val batchSize: Int) extends DataFactory {
         lastNames
     }
 
-    def generateNames(): ArrayBuffer[Person] = {
+    def generateData(): ArrayBuffer[Person] = {
         val firstNames = getFirstNames()
         val lastNames = getLastNames()
         val rand = Random

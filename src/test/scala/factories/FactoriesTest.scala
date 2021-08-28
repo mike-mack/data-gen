@@ -45,7 +45,7 @@ class FactoriesSpec extends AnyFlatSpec with Matchers {
     it should "generate a list of 10 names when batchSize is 10" in {
         val batchSize = 10
         val factory = DataFactory("names", batchSize)
-        val namesList = factory.generateNames()
+        val namesList = factory.generateData()
         assert(namesList.length == 10)
     }
 }
