@@ -19,29 +19,6 @@
 // object Hello {
 
 //   def main(args: Array[String]) {
-//     val usage = """
-//       Usage: fakemake [--batch num]
-//     """
-
-//     if (args.length == 0) println(usage)
-//     val arglist = args.toList
-//     type OptionMap = Map[String, Any]
-
-//     def nextOption(map: OptionMap, list: List[String]): OptionMap = {
-//       def isSwitch(s: String) = (s(0).equals("-"))
-//       list match {
-//         case Nil => map
-//         case "--batch-size" :: value :: tail => nextOption(map ++ Map("batch-size" -> value.toInt), tail)
-//       }
-//     }
-
-//     val options = nextOption(Map(), arglist)
-//     println(options)
-
-
-
-
-
 //     val firstNames = Source.fromFile("first.txt").getLines.toList
 //     val lastNames = Source.fromFile("last.txt").getLines.toList
 //     val rand = Random

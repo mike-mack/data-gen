@@ -24,8 +24,8 @@ class ArgumentParserSpec extends AnyFlatSpec with Matchers {
             // should be unreachable
             assert(false)
         } catch {
-            case e: Exception => assert(true)
-            case _ : Throwable => assert(false)
+            case e: Exception => assert(true) // TODO: This is lazy, fix it; what error specifically? Inspect the message?
+            case _: Throwable => assert(false)
         }
     } 
 }
